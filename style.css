@@ -60,6 +60,7 @@ body {
   left: 0;
   z-index: 10000;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .hero_section .nav_bar .left_nav {
@@ -80,6 +81,9 @@ body {
   margin: 0 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
+  border-left: 3px solid #ff9e00;
+  border-radius: 2px;
+  padding: 0 0px 0 5px;
 }
 
 .hero_section .nav_bar .logo {
@@ -372,7 +376,7 @@ body {
   display: inline-block;
   font-size: 1.25rem;
   font-family: "Habibi",
-  serif;
+    serif;
   font-weight: 600;
   padding: 0 0px 5px 0;
   margin-bottom: 20px;
@@ -437,7 +441,8 @@ footer {
 .footer_cont .col2 ul {
   list-style: none;
 }
-.footer_cont .col2 ul li{
+
+.footer_cont .col2 ul li {
   margin-bottom: 5px;
 }
 
@@ -446,11 +451,13 @@ footer {
   font-family: 0.9rem;
   margin-bottom: 5px;
 }
-.footer_cont .col3 a{
+
+.footer_cont .col3 a {
   font-family: 0.9rem;
   margin-bottom: 5px;
 }
-.footer_cont .col3 p{
+
+.footer_cont .col3 p {
   font-family: 0.9rem;
   margin-bottom: 5px;
 }
