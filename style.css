@@ -11,33 +11,6 @@ body {
   font-family: sans-serif;
 }
 
-.hero_section .headline_cont {
-  padding: 250px 100px 0;
-}
-
-.hero_section .headline_cont .headline {
-  /* font-family: "PT Serif", serif; */
-  /* font-family: 'Spectral SC', serif; */
-  font-family: 'Georama',
-    sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: whitesmoke;
-  /* padding: 250px 100px 0; */
-  margin-bottom: 30px;
-  line-height: 55px;
-}
-
-.btn a {
-  padding: 8px 13px;
-  background-color: #e76f51;
-  color: #212529;
-  font-weight: bold;
-  font-size: 0.7rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .hero_section {
   background: url(img/wepik-20211130-152825.jpg);
   background-position: left;
@@ -85,6 +58,7 @@ body {
   border: none;
   transition: transform 250ms ease-in-out;
 }
+
 .hero_section .nav_bar .left_nav a::after {
   content: '';
   display: block;
@@ -108,20 +82,50 @@ a:focus::after {
   display: block;
   text-decoration: none;
   color: #212529;
-   font-family: "Habibi",
-  sans-serif;
+  font-family: "Habibi",
+    sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
 }
 
 .right_cta a {
+  display: inline-block;
   background-color: #e76f51;
-  color: #212529;
+  color: whitesmoke;
   padding: 8px 13px;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "lato", sans-serif;
   font-weight: bold;
   font-size: 0.7rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero_section .headline_cont {
+  padding: 250px 100px 0;
+}
+
+.hero_section .headline_cont .headline {
+  font-family: 'Georama',
+    sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: whitesmoke;
+  margin-bottom: 30px;
+  line-height: 58px;
+}
+
+.headline_cta a {
+  display: inline-block;
+  background-color: #e76f51;
+  color: whitesmoke;
+  padding: 15px 27px;
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -145,9 +149,10 @@ a:focus::after {
   font-size: 32px;
   font-family: 'Georama',
     sans-serif;
+  background: linear-gradient(to right, #e76f51 60%, transparent 50%);
   font-weight: 400;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 10px 20px;
 }
 
 .about_us_section p {
@@ -162,12 +167,25 @@ a:focus::after {
 /* WHAT WE DO SECTION */
 .wwd_section {
   background: no-repeat url(img/what-we-do-BG.jpg);
-  /* filter: saturate(0); */
   background-size: 100vw 250vh;
   width: 100vw;
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 0;
+}
+
+.wwd_section h2 {
+  background: linear-gradient(to right, #e76f51 55%, transparent 40%);
+  font-size: 32px;
+  font-family: 'Georama',
+    sans-serif;
+  font-weight: 400;
+  margin: 0 0 60px;
+  padding: 10px 0 10px 10px;
+  width: 15%;
 }
 
 .wwd_section .item {
@@ -203,14 +221,6 @@ a:focus::after {
   width: 100%;
   filter: saturate(0);
   height: 300px;
-}
-
-.wwd_section h2 {
-  margin: 0 0 60px;
-  font-size: 32px;
-  font-family: 'Georama',
-    sans-serif;
-  font-weight: 400;
 }
 
 .wwd_section .title {
@@ -306,22 +316,25 @@ a:focus::after {
 
 /* OTHER SERVICES SECTION */
 .oss {
+  color: whitesmoke;
   background-color: #212529;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  width: 100vw;
-  color: whitesmoke;
   padding: 70px 20px 180px;
+  width: 100vw;
+  border-top: 1px solid rgba(196, 196, 196, 0.3);
 }
 
 .oss .heading {
-  margin: 0 0 20px;
+  background: linear-gradient(to right, #e76f51 55%, transparent 40%);
   font-size: 32px;
   font-family: 'Georama',
     sans-serif;
   font-weight: 400;
+  margin: 0 0 20px;
+  padding: 10px 0 5px 25px;
 }
 
 .oss .oss_desc {
@@ -387,7 +400,7 @@ footer {
   color: #e76f51;
   font-family: "Lato",
     sans-serif;
-  border-top: 1px solid rgba(196, 196, 196, 0.3);
+  border-top: 2px solid rgba(196, 196, 196, 0.3);
   width: 100vw;
   height: 200px;
   display: flex;
@@ -456,9 +469,6 @@ footer .col3 {
   font-family: 0.9rem;
   font-size: 0.9rem;
   margin-bottom: 0;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 
 footer .col3 a {
@@ -489,9 +499,11 @@ footer .col3 p {
   .hero_section {
     width: 100vw;
     height: 100vh;
-    background: url(img/wepik-20211130-152825.jpg);
-    background-position: top;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3)),
+    url(img/Color-splatter-and-flyer.png);
+    background-position: bottom;
     background-repeat: no-repeat;
+    background-color: black;
     /* background-size: auto; */
   }
 
@@ -511,20 +523,26 @@ footer .col3 p {
   }
 
   .hero_section .headline_cont .headline {
-    font-family: 'Spectral', serif;
+    color: whitesmoke;
+    font-family: 'Georama',
+      sans-serif;
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 30px;
-    line-height: 40px;
+    line-height: 45px;
     text-align: center;
   }
 
-  .btn a {
-    padding: 12px 13px;
+  .hero_section .headline_cont .headline .headline_cta a {
+    display: inline-block;
     background-color: #e76f51;
-    color: #212529;
+    color: whitesmoke;
+    padding: 8px 13px;
+    font-family: "lato", sans-serif;
     font-weight: bold;
     font-size: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 4px;
     text-decoration: none;
     text-transform: uppercase;
   }
