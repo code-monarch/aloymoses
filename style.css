@@ -22,9 +22,9 @@ body {
 }
 
 .hero_section .nav_bar {
-  color: black;
+  color: whitesmoke;
   display: flex;
-  background-color: whitesmoke;
+  background-color: #3e1f47;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -67,7 +67,7 @@ body {
   display: block;
   width: 0;
   height: 3px;
-  background: #e76f51;
+  background: rgba(255, 255, 255, 0.2);
   transition: width .25s ease-in;
 }
 
@@ -84,7 +84,7 @@ a:focus::after {
 .logo a {
   display: block;
   text-decoration: none;
-  color: #212529;
+  color: whitesmoke;
   font-family: "Habibi",
     sans-serif;
   font-weight: 500;
@@ -135,7 +135,7 @@ a:focus::after {
 
 /* ABOUT US SECTION */
 .about_us_section {
-  background: #212529;
+  background: #3e1f47;
   color: whitesmoke;
   /* font-family: sans-serif; */
   font-size: 0.8rem;
@@ -169,7 +169,8 @@ a:focus::after {
 
 /* WHAT WE DO SECTION */
 .wwd_section {
-  background: no-repeat url(img/what-we-do-BG.jpg);
+  /* background: no-repeat url(img/what-we-do-BG.jpg); */
+  background-color: black;
   background-size: 100vw 250vh;
   display: flex;
   flex-direction: column;
@@ -181,7 +182,8 @@ a:focus::after {
 }
 
 .wwd_section h2 {
-  background: linear-gradient(to right, #fb5607 55%, transparent 40%);
+  background: linear-gradient(to right, #3e1f47 55%, transparent 40%);
+  color: whitesmoke;
   font-size: 32px;
   font-family: 'Georama',
     sans-serif;
@@ -192,7 +194,8 @@ a:focus::after {
 }
 
 .wwd_section .item {
-  background-color: rgba(196, 196, 196, 0.2);
+  /* background-color: rgba(196, 196, 196, 0.2); */
+  background-color: whitesmoke;
   height: 593px;
   display: flex;
   flex-direction: column;
@@ -203,7 +206,7 @@ a:focus::after {
 }
 
 .wwd_section .inverse_item {
-  background-color: rgba(196, 196, 196, 0.2);
+  /* background-color: rgba(196, 196, 196, 0.2); */
   height: 593px;
   display: flex;
   flex-direction: column-reverse;
@@ -222,22 +225,24 @@ a:focus::after {
 
 .wwd_section .item_img {
   width: 100%;
-  filter: saturate(0);
+  /* filter: saturate(0); */
   height: 300px;
 }
 
 .wwd_section .title {
+  color: black;
   display: inline-block;
   margin-bottom: 15px;
   font-size: 1.25rem;
   font-family: "Habibi", serif;
   font-weight: 600;
-  border-bottom: 3px solid #fb5607;
+  border-bottom: 3px solid #3e1f47;
   border-radius: 2px;
   padding: 0 0px 5px 0;
 }
 
 .wwd_section .description {
+  color: black;
   max-width: 256px;
   font-size: 13px;
   font-family: "Habibi", serif;
@@ -320,7 +325,8 @@ a:focus::after {
 /* OTHER SERVICES SECTION */
 .oss {
   color: whitesmoke;
-  background-color: #212529;
+  /* background-color: #3e1f47; */
+  background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg);
   font-size: 16px;
   display: flex;
   flex-direction: column;
