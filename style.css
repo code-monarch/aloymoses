@@ -12,11 +12,10 @@ body {
 }
 
 .hero_section {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/Borehole-Drilling-machine-photo.jpg);
+  background: url(img/Borehole-Drilling-machine-photo.jpg);
   background-position: right;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -24,7 +23,7 @@ body {
 .hero_section .nav_bar {
   color: whitesmoke;
   display: flex;
-  background-color: #3e1f47;
+  background-color: #fb5607;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -93,13 +92,14 @@ a:focus::after {
 
 .right_cta a {
   display: inline-block;
-  background-color: #3e1f47;
+  background-color: #fb5607;
   color: whitesmoke;
   padding: 8px 13px;
   font-family: "lato", sans-serif;
   font-weight: bold;
   font-size: 0.7rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  border: 2px solid whitesmoke;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -114,14 +114,14 @@ a:focus::after {
     sans-serif;
   font-weight: 700;
   font-size: 40px;
-  color: whitesmoke;
+  color: black;
   margin-bottom: 30px;
   line-height: 58px;
 }
 
 .headline_cta a {
   display: inline-block;
-  background-color: #3e1f47;
+  background-color: #fb5607;
   color: whitesmoke;
   padding: 15px 27px;
   font-family: "lato", sans-serif;
@@ -135,7 +135,7 @@ a:focus::after {
 
 /* ABOUT US SECTION */
 .about_us_section {
-  background: #3e1f47;
+  background: #fb5607;
   color: whitesmoke;
   /* font-family: sans-serif; */
   font-size: 0.8rem;
@@ -182,7 +182,7 @@ a:focus::after {
 }
 
 .wwd_section h2 {
-  background: linear-gradient(to right, #3e1f47 55%, transparent 40%);
+  background: linear-gradient(to right, #fb5607 55%, transparent 40%);
   color: whitesmoke;
   font-size: 32px;
   font-family: 'Georama',
@@ -190,7 +190,7 @@ a:focus::after {
   font-weight: 400;
   margin: 0 0 60px;
   padding: 10px 0 10px 10px;
-  width: 15%;
+  width: auto;
 }
 
 .wwd_section .item {
@@ -236,7 +236,7 @@ a:focus::after {
   font-size: 1.25rem;
   font-family: "Habibi", serif;
   font-weight: 600;
-  border-bottom: 3px solid #3e1f47;
+  border-bottom: 3px solid #fb5607;
   border-radius: 2px;
   padding: 0 0px 5px 0;
 }
@@ -294,6 +294,13 @@ a:focus::after {
   top: 1100px;
   opacity: 15%;
 }
+ .col_threads_img {
+   display: none;
+ }
+
+ .ass_mugs2_img {
+   display: none;
+ }
 
 /* TOP ITEMS */
 .top_items {
@@ -324,30 +331,36 @@ a:focus::after {
 
 /* OTHER SERVICES SECTION */
 .oss {
-  color: whitesmoke;
-  /* background-color: #3e1f47; */
-  background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg);
+  color: black;
+  background-color: white;
+  /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
+  /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: fit-content;
   padding: 70px 20px 180px;
   width: 100vw;
   border-top: 1px solid rgba(196, 196, 196, 0.3);
 }
 
 .oss .heading {
-  background: linear-gradient(to right, #fb5607 55%, transparent 40%);
+  /* background: linear-gradient(to right, #fb5607 55%, transparent 40%); */
   font-size: 32px;
   font-family: 'Georama',
     sans-serif;
   font-weight: 400;
+  width: auto;
   margin: 0 0 20px;
   padding: 10px 0 5px 25px;
+  text-align: center;
+  color: inherit;
 }
 
 .oss .oss_desc {
-  color: antiquewhite;
+  color: inherit;
   max-width: 970px;
   text-align: center;
   font-family: "Lato",
@@ -406,7 +419,7 @@ a:focus::after {
 /* FOOTER */
 footer {
   background-color: whitesmoke;
-  color: #3e1f47;
+  color: #fb5607;
   font-family: "Lato",
     sans-serif;
   border-top: 2px solid rgba(196, 196, 196, 0.3);
@@ -447,7 +460,7 @@ footer input[type=number] {
 footer input[type=submit] {
   display: block;
   color: whitesmoke;
-  background-color: #3e1f47;
+  background-color: #fb5607;
   width: 100%;
   outline: none;
   border: none;
@@ -514,7 +527,7 @@ footer .col3 p {
   .hero_section {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: white;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(img/Borehole-Drilling-machine-photo.jpg);
     background-position: bottom;
@@ -549,7 +562,7 @@ footer .col3 p {
 
   .headline_cta a {
     display: inline-block;
-    background-color: #3e1f47;
+    background-color: #fb5607;
     color: whitesmoke;
     padding: 15px 27px;
     font-family: "lato", sans-serif;
@@ -593,7 +606,7 @@ footer .col3 p {
   }
 
   .wwd_section h2 {
-    background: linear-gradient(to right, #3e1f47 55%, transparent 40%);
+    background: linear-gradient(to right, #fb5607 55%, transparent 40%);
     margin: 0 0 60px;
     font-size: 22px;
     font-family: 'Georama',
@@ -636,7 +649,7 @@ footer .col3 p {
     font-size: 1.25rem;
     font-family: "Habibi", serif;
     font-weight: 600;
-    border-bottom: 3px solid #3e1f47;
+    border-bottom: 3px solid #fb5607;
     border-radius: 2px;
     padding: 20px 0px 5px 5px;
   }
@@ -742,8 +755,9 @@ footer .col3 p {
 
   /* OTHER SERVICES SECTION */
   .oss {
-    color: whitesmoke;
-    background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg);
+    color: black;
+    /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -768,7 +782,7 @@ footer .col3 p {
   }
 
   .oss .oss_desc {
-    color: antiquewhite;
+    color: black;
     max-width: 320px;
     text-align: center;
     font-family: "Lato",
@@ -794,7 +808,7 @@ footer .col3 p {
 
   footer {
     background-color: whitesmoke;
-    color: #3e1f47;
+    color: #fb5607;
     font-family: "Lato",
       sans-serif;
     border-top: 2px solid rgba(196, 196, 196, 0.3);
@@ -836,7 +850,7 @@ footer .col3 p {
   footer input[type=submit] {
     display: block;
     color: whitesmoke;
-    background-color: #3e1f47;
+    background-color: #fb5607;
     width: 100%;
     outline: none;
     border: none;
