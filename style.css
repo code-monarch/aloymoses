@@ -152,7 +152,7 @@ a:focus::after {
   font-size: 2rem;
   font-family: 'Georama',
     sans-serif;
-  background: linear-gradient(to right, #fb5607 60%, transparent 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 60%, transparent 50%);
   font-weight: 400;
   text-align: center;
   padding: 10px 0 10px 20px;
@@ -194,8 +194,8 @@ a:focus::after {
 }
 
 .wwd_section .item {
-  /* background-color: rgba(196, 196, 196, 0.2); */
-  background-color: whitesmoke;
+  background-color: rgba(196, 196, 196, 0.2);
+  /* background-color: whitesmoke; */
   height: 593px;
   display: flex;
   flex-direction: column;
@@ -230,7 +230,7 @@ a:focus::after {
 }
 
 .wwd_section .title {
-  color: black;
+  color: white;
   display: inline-block;
   margin-bottom: 15px;
   font-size: 1.25rem;
@@ -242,7 +242,7 @@ a:focus::after {
 }
 
 .wwd_section .description {
-  color: black;
+  color: white;
   max-width: 256px;
   font-size: 13px;
   font-family: "Habibi", serif;
@@ -491,6 +491,11 @@ footer .col3 p {
   margin-bottom: 0;
 }
 
+
+/*  */
+/*  */
+/*  */
+/*  */
 /* MEDIA QUERIES */
 @media (max-width: 480px) {
   * {
@@ -544,7 +549,7 @@ footer .col3 p {
 
   .headline_cta a {
     display: inline-block;
-    background-color: #e76f51;
+    background-color: #3e1f47;
     color: whitesmoke;
     padding: 15px 27px;
     font-family: "lato", sans-serif;
@@ -575,19 +580,302 @@ footer .col3 p {
 
   /* WHAT WE DO SECTION */
   .wwd_section {
-    background: no-repeat url(img/what-we-do-BG.jpg);
-    background-size: 100vw 250vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
+    height: fit-content;
     position: relative;
     text-align: center;
     padding: 40px 0;
   }
 
   .wwd_section h2 {
+    background: linear-gradient(to right, #3e1f47 55%, transparent 40%);
     margin: 0 0 60px;
     font-size: 22px;
     font-family: 'Georama',
       sans-serif;
     font-weight: 400;
+    margin: 0 0 60px;
+    padding: 5px 0;
+    width: 40%;
+  }
+
+  .wwd_section .item,
+  .inverse_item {
+    background-color: rgba(196, 196, 196, 0.2);
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 400px; */
+    border: 1px solid rgba(196, 196, 196, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 100;
+  }
+
+  .wwd_section .item_content,
+  .inverse_item .item_content {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .wwd_section .item_img {
+    width: 100%;
+    /* filter: saturate(0); */
+    height: 300px;
+  }
+
+  .wwd_section .title {
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-family: "Habibi", serif;
+    font-weight: 600;
+    border-bottom: 3px solid #3e1f47;
+    border-radius: 2px;
+    padding: 20px 0px 5px 5px;
+  }
+
+  .wwd_section .description {
+    color: white;
+    max-width: 256px;
+    font-size: 13px;
+    font-family: "Habibi", serif;
+    line-height: 20px;
+    padding-left: 5px;
+  }
+
+  .splatter_img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 100px;
+    opacity: 15%;
+  }
+
+  .ass_mugs_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -50px;
+    top: 0;
+    opacity: 15%;
+  }
+
+  .gray_flyer_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 500px;
+    opacity: 15%;
+  }
+
+  .emb_machine_img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 0px;
+    top: 600px;
+    opacity: 15%;
+  }
+
+  .emb_machine2_img {
+    position: absolute;
+    transform: rotate(360deg);
+    width: 300px;
+    height: 300px;
+    left: 80px;
+    top: 1350px;
+    opacity: 15%;
+  }
+  .col_threads_img {
+    position: absolute;
+    /* transform: rotate(360deg); */
+    width: 100%;
+    height: 330px;
+    left: 0;
+    top: 2000px;
+    opacity: 15%;
+  }
+  .ass_mugs2_img {
+    position: absolute;
+    /* transform: rotate(360deg); */
+    width: 100%;
+    height: 330px;
+    left: 0;
+    top: 2670px;
+    opacity: 15%;
+  }
+
+  .item {
+    height: fit-content;
+  }
+
+  .top_items,
+  .bottom_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .top_items .top_item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .bottom_items .bottom_item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* OTHER SERVICES SECTION */
+  .oss {
+    color: whitesmoke;
+    background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg);
+    /* font-size: 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10px 80px;
+    width: 100vw;
+    height: fit-content;
+    border-top: 1px solid rgba(196, 196, 196, 0.3);
+    /* margin-bottom: 200px; */
+  }
+
+  .oss .heading {
+    background: none;
+    font-size: 22px;
+    font-family: 'Georama',
+      sans-serif;
+    font-weight: 400;
+    width: auto;
+    margin: 0 0 20px;
+    padding-left: 2px;
+    text-align: center;
+  }
+
+  .oss .oss_desc {
+    color: antiquewhite;
+    max-width: 320px;
+    text-align: center;
+    font-family: "Lato",
+      sans-serif;
+    font-size: 13px;
+    margin-bottom: 100px;
+    line-height: 25px;
+  }
+
+  .drilling_service {
+    width: 80%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  .drilling_service img {
+    width: 100%;
+    height: 300px;
+  }
+
+  footer {
+    background-color: whitesmoke;
+    color: #3e1f47;
+    font-family: "Lato",
+      sans-serif;
+    border-top: 2px solid rgba(196, 196, 196, 0.3);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 30px;
+  }
+
+  footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  footer form {
+    text-align: center;
+  }
+
+  footer input[type=text],
+  input[type=number] {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgba(196, 196, 196, 0.3)
+  }
+
+  footer input[type=text] {
+    margin-bottom: 10px;
+  }
+
+  footer input[type=number] {
+    margin-bottom: 10px;
+  }
+
+  footer input[type=submit] {
+    display: block;
+    color: whitesmoke;
+    background-color: #3e1f47;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+
+  form input::placeholder {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+
+
+  footer .col2 {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  footer .col2 ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  footer .col2 ul li {
+    margin-bottom: 5px;
+  }
+
+  footer .col3 {
+    text-align: center;
+    font-family: 0.9rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  footer .col3 a {
+    display: inline-block;
+    font-family: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  footer .col3 p {
+    font-family: 0.9rem;
+    margin-bottom: 0;
   }
 }
