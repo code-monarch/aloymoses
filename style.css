@@ -518,7 +518,6 @@ footer .col3 p {
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: black;
-    /* background-size: auto; */
   }
 
   /* HIDE NAVBAR */
@@ -695,6 +694,7 @@ footer .col3 p {
     top: 1350px;
     opacity: 15%;
   }
+
   .col_threads_img {
     position: absolute;
     /* transform: rotate(360deg); */
@@ -704,6 +704,7 @@ footer .col3 p {
     top: 2000px;
     opacity: 15%;
   }
+
   .ass_mugs2_img {
     position: absolute;
     /* transform: rotate(360deg); */
