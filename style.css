@@ -513,7 +513,7 @@ footer .col3 p {
     font-weight: 400;
     width: auto;
     margin: 0 0 20px;
-    padding-left: 2px;
+    /* padding-left: 2px; */
     text-align: center;
   }
 
