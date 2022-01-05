@@ -12,10 +12,11 @@ body {
 }
 
 .hero_section {
-  background: url(img/Borehole-Drilling-machine-photo.jpg);
-  background-position: right;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url("img/geophysics.jpg");
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -23,7 +24,7 @@ body {
 .hero_section .nav_bar {
   color: whitesmoke;
   display: flex;
-  background-color: #fb5607;
+  background-color: #d45920;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -48,7 +49,7 @@ body {
 .hero_section .nav_bar .left_nav a {
   display: inline-block;
   color: inherit;
-  font-family: "Lato",
+  font-family: "Poppins",
     sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
@@ -92,13 +93,12 @@ a:focus::after {
 
 .right_cta a {
   display: inline-block;
-  background-color: #fb5607;
+  background-color: #d45920;
   color: whitesmoke;
   padding: 8px 13px;
-  font-family: "lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 0.7rem;
-  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   border: 2px solid whitesmoke;
   border-radius: 4px;
   text-decoration: none;
@@ -106,28 +106,52 @@ a:focus::after {
 }
 
 .hero_section .headline_cont {
+  text-align: center;
   padding: 250px 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero_section .headline_cont .headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero_section .headline_cont .headline h2 {
   font-family: 'Georama',
     sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  color: black;
-  margin-bottom: 30px;
+  font-size: 45px;
+  color: whitesmoke;
+  margin-bottom: 10px;
   line-height: 58px;
+}
+
+.hero_section .headline_cont .headline p {
+  font-family: 'Georama',
+    sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: whitesmoke;
+  max-width: 600px;
+  text-align: center;
 }
 
 .headline_cta a {
   display: inline-block;
-  background-color: #fb5607;
+  background-color: #d45920;
   color: whitesmoke;
-  padding: 15px 27px;
-  font-family: "lato", sans-serif;
+  padding: 18px 30px;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 0.7rem;
-
+  font-size: 0.8rem;
+  border: 3px solid whitesmoke;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -135,9 +159,8 @@ a:focus::after {
 
 /* ABOUT US SECTION */
 .about_us_section {
-  background: #fb5607;
+  background: #d45920;
   color: whitesmoke;
-  /* font-family: sans-serif; */
   font-size: 0.8rem;
   padding: 70px 20px;
   text-align: center;
@@ -149,7 +172,7 @@ a:focus::after {
 }
 
 .about_us_section h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: 'Georama',
     sans-serif;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 60%, transparent 50%);
@@ -163,200 +186,36 @@ a:focus::after {
   max-width: 970px;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin-top: 15px;
 }
 
-/* WHAT WE DO SECTION */
-.wwd_section {
-  /* background: no-repeat url(img/what-we-do-BG.jpg); */
-  background-color: black;
-  background-size: 100vw 250vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  position: relative;
-  text-align: center;
-  padding: 40px 0;
-}
 
-.wwd_section h2 {
-  background: linear-gradient(to right, #fb5607 55%, transparent 40%);
-  color: whitesmoke;
-  font-size: 32px;
-  font-family: 'Georama',
-    sans-serif;
-  font-weight: 400;
-  margin: 0 0 60px;
-  padding: 10px 0 10px 10px;
-  width: auto;
-}
-
-.wwd_section .item {
-  background-color: rgba(196, 196, 196, 0.2);
-  /* background-color: whitesmoke; */
-  height: 593px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgba(196, 196, 196, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  z-index: 100;
-}
-
-.wwd_section .inverse_item {
-  /* background-color: rgba(196, 196, 196, 0.2); */
-  height: 593px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  z-index: 100;
-}
-
-.wwd_section .inverse_item .item_content {
-  width: 100%;
-}
-
-.wwd_section .item_content {
-  width: 100%;
-  padding: 20px 15px;
-}
-
-.wwd_section .item_img {
-  width: 100%;
-  /* filter: saturate(0); */
-  height: 300px;
-}
-
-.wwd_section .title {
-  color: white;
-  display: inline-block;
-  margin-bottom: 15px;
-  font-size: 1.25rem;
-  font-family: "Habibi", serif;
-  font-weight: 600;
-  border-bottom: 3px solid #fb5607;
-  border-radius: 2px;
-  padding: 0 0px 5px 0;
-}
-
-.wwd_section .description {
-  color: white;
-  max-width: 256px;
-  font-size: 13px;
-  font-family: "Habibi", serif;
-  line-height: 20px;
-}
-
-.splatter_img {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 36.21px;
-  top: 0;
-  opacity: 15%;
-}
-
-.ass_mugs_img {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  right: 0;
-  top: 0;
-  opacity: 15%;
-}
-
-.gray_flyer_img {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 0;
-  top: 900px;
-  opacity: 15%;
-}
-
-.emb_machine_img {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  right: 70px;
-  top: 700px;
-  opacity: 15%;
-}
-
-.emb_machine2_img {
-  position: absolute;
-  transform: rotate(15deg);
-  width: 400px;
-  height: 400px;
-  right: 200px;
-  top: 1100px;
-  opacity: 15%;
-}
- .col_threads_img {
-   display: none;
- }
-
- .ass_mugs2_img {
-   display: none;
- }
-
-/* TOP ITEMS */
-.top_items {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80vw;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.top_items .top_item {
-  width: 22%;
-  /* margin: 0 auto; */
-}
-
-/* BOTTOM ITEM */
-.bottom_items {
-  display: flex;
-  justify-content: space-evenly;
-  width: 60vw;
-  margin: 50px auto 80px auto;
-  text-align: left;
-}
-
-.bottom_items .bottom_item {
-  width: 32%;
-}
 
 /* OTHER SERVICES SECTION */
 .oss {
   color: black;
-  background-color: white;
-  /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
-  /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
-  font-size: 16px;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: fit-content;
-  padding: 70px 20px 180px;
+  padding: 70px 100px 180px;
   width: 100vw;
   border-top: 1px solid rgba(196, 196, 196, 0.3);
 }
 
-.oss .heading {
-  /* background: linear-gradient(to right, #fb5607 55%, transparent 40%); */
-  font-size: 32px;
+.oss .heading h3 {
+  color: #d45920;
   font-family: 'Georama',
     sans-serif;
+  font-size: 2.3rem;
   font-weight: 400;
-  width: auto;
+  /* width: auto; */
   margin: 0 0 20px;
   padding: 10px 0 5px 25px;
   text-align: center;
-  color: inherit;
 }
 
 .oss .oss_desc {
@@ -365,61 +224,83 @@ a:focus::after {
   text-align: center;
   font-family: "Lato",
     sans-serif;
-  font-size: 15px;
+  font-size: 1.3rem;
   margin-bottom: 30px;
-  line-height: 25px;
+  line-height: 30px;
+}
+
+.oss .flex {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .drilling_service {
-  width: 80%;
-  height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+  margin: 90px auto 0;
 }
 
 .drilling_service .drilling_machine_desc {
   /* background-color: #727272; */
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  padding: 30px 20px;
+  padding: 30px 30px;
+  font-size: 1.3rem;
 }
 
 .drilling_service img {
-  width: 400px;
+  width: 100%;
   height: 300px;
 }
 
 .drilling_service h2 {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-family: "Habibi",
     serif;
   font-weight: 600;
   padding: 0 0px 5px 0;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #fb5607;
+  margin-bottom: 28px;
+  border-bottom: 3px solid #d45920;
   border-radius: 2px;
 }
 
 .drilling_service p {
   max-width: 320px;
-  font-size: 13px;
+  font-size: 1.0rem;
   font-family: "Habibi",
     serif;
   text-align: left;
-  line-height: 20px;
+  line-height: 31px;
   margin-bottom: 35px;
 }
 
-.drilling_service .drilling_machine_desc .right_cta a {
+.drilling_service .drilling_machine_desc .cta a {
+  display: block;
+  background-color: #d45920;
+  color: whitesmoke;
+  font-family: "Poppins",
+    sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 14px 40px;
+  border: 3px solid whitesmoke;
+  border-radius: 4px;
+  text-align: center !important;
+  text-decoration: none;
+  text-transform: uppercase;
   box-shadow: none;
 }
 
 /* FOOTER */
 footer {
   background-color: whitesmoke;
-  color: #fb5607;
+  color: #d45920;
   font-family: "Lato",
     sans-serif;
   border-top: 2px solid rgba(196, 196, 196, 0.3);
@@ -460,7 +341,7 @@ footer input[type=number] {
 footer input[type=submit] {
   display: block;
   color: whitesmoke;
-  background-color: #fb5607;
+  background-color: #d45920;
   width: 100%;
   outline: none;
   border: none;
@@ -562,7 +443,7 @@ footer .col3 p {
 
   .headline_cta a {
     display: inline-block;
-    background-color: #fb5607;
+    background-color: #d45920;
     color: whitesmoke;
     padding: 15px 27px;
     font-family: "lato", sans-serif;
@@ -591,172 +472,11 @@ footer .col3 p {
     line-height: 25px;
   }
 
-  /* WHAT WE DO SECTION */
-  .wwd_section {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: fit-content;
-    position: relative;
-    text-align: center;
-    padding: 40px 0;
-  }
 
-  .wwd_section h2 {
-    background: linear-gradient(to right, #fb5607 55%, transparent 40%);
-    margin: 0 0 60px;
-    font-size: 22px;
-    font-family: 'Georama',
-      sans-serif;
-    font-weight: 400;
-    margin: 0 0 60px;
-    padding: 5px 0;
-    width: 40%;
-  }
-
-  .wwd_section .item,
-  .inverse_item {
-    background-color: rgba(196, 196, 196, 0.2);
-    /* height: 300px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* margin-bottom: 400px; */
-    border: 1px solid rgba(196, 196, 196, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    z-index: 100;
-  }
-
-  .wwd_section .item_content,
-  .inverse_item .item_content {
-    width: 100%;
-    padding: 20px 15px;
-  }
-
-  .wwd_section .item_img {
-    width: 100%;
-    /* filter: saturate(0); */
-    height: 300px;
-  }
-
-  .wwd_section .title {
-    color: white;
-    display: inline-block;
-    margin-bottom: 15px;
-    font-size: 1.25rem;
-    font-family: "Habibi", serif;
-    font-weight: 600;
-    border-bottom: 3px solid #fb5607;
-    border-radius: 2px;
-    padding: 20px 0px 5px 5px;
-  }
-
-  .wwd_section .description {
-    color: white;
-    max-width: 256px;
-    font-size: 13px;
-    font-family: "Habibi", serif;
-    line-height: 20px;
-    padding-left: 5px;
-  }
-
-  .splatter_img {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 0px;
-    top: 100px;
-    opacity: 15%;
-  }
-
-  .ass_mugs_img {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    right: -50px;
-    top: 0;
-    opacity: 15%;
-  }
-
-  .gray_flyer_img {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 0px;
-    top: 500px;
-    opacity: 15%;
-  }
-
-  .emb_machine_img {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 0px;
-    top: 600px;
-    opacity: 15%;
-  }
-
-  .emb_machine2_img {
-    position: absolute;
-    transform: rotate(360deg);
-    width: 300px;
-    height: 300px;
-    left: 80px;
-    top: 1350px;
-    opacity: 15%;
-  }
-
-  .col_threads_img {
-    position: absolute;
-    /* transform: rotate(360deg); */
-    width: 100%;
-    height: 330px;
-    left: 0;
-    top: 2000px;
-    opacity: 15%;
-  }
-
-  .ass_mugs2_img {
-    position: absolute;
-    /* transform: rotate(360deg); */
-    width: 100%;
-    height: 330px;
-    left: 0;
-    top: 2670px;
-    opacity: 15%;
-  }
-
-  .item {
-    height: fit-content;
-  }
-
-  .top_items,
-  .bottom_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80vw;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .top_items .top_item {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .bottom_items .bottom_item {
-    width: 100%;
-    margin-bottom: 40px;
-  }
 
   /* OTHER SERVICES SECTION */
   .oss {
     color: black;
-    /* background: no-repeat url(img/black-glitch-effect-digital-noise-texture-background.jpg); */
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -766,7 +486,18 @@ footer .col3 p {
     width: 100vw;
     height: fit-content;
     border-top: 1px solid rgba(196, 196, 196, 0.3);
-    /* margin-bottom: 200px; */
+  }
+
+  .oss .flex {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 100%;
+    /* height: 800px; */
+  }
+
+  .oss .flex .drilling_service1 {
+    margin-bottom: 130px !important;
   }
 
   .oss .heading {
@@ -808,7 +539,7 @@ footer .col3 p {
 
   footer {
     background-color: whitesmoke;
-    color: #fb5607;
+    color: #d45920;
     font-family: "Lato",
       sans-serif;
     border-top: 2px solid rgba(196, 196, 196, 0.3);
@@ -850,7 +581,7 @@ footer .col3 p {
   footer input[type=submit] {
     display: block;
     color: whitesmoke;
-    background-color: #fb5607;
+    background-color: #d45920;
     width: 100%;
     outline: none;
     border: none;
@@ -894,3 +625,325 @@ footer .col3 p {
     margin-bottom: 0;
   }
 }
+
+
+
+
+
+
+
+
+/* WHAT WE DO SECTION */
+/* .wwd_section {
+  background-color: black;
+  background-size: 100vw 250vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.wwd_section h2 {
+  background: linear-gradient(to right, #963204 55%, transparent 40%);
+  color: whitesmoke;
+  font-size: 32px;
+  font-family: 'Georama',
+    sans-serif;
+  font-weight: 400;
+  margin: 0 0 60px;
+  padding: 10px 0 10px 10px;
+  width: auto;
+}
+
+.wwd_section .item {
+  background-color: rgba(196, 196, 196, 0.2);
+  height: 593px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(196, 196, 196, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 100;
+}
+
+.bottom_items .bottom_item {
+  width: 32%;
+} */
+/* .wwd_section .inverse_item {
+  height: 593px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  z-index: 100;
+} */
+
+/* .wwd_section .inverse_item .item_content {
+  width: 100%;
+} */
+
+/* .wwd_section .item_content {
+  width: 100%;
+  padding: 20px 15px;
+} */
+
+/* .wwd_section .item_img {
+  width: 100%;
+  height: 300px;
+} */
+
+/* .wwd_section .title {
+  color: white;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-family: "Habibi", serif;
+  font-weight: 600;
+  border-bottom: 3px solid #d45920;
+  border-radius: 2px;
+  padding: 0 0px 5px 0;
+} */
+
+/* .wwd_section .description {
+  color: white;
+  max-width: 256px;
+  font-size: 13px;
+  font-family: "Habibi", serif;
+  line-height: 20px;
+} */
+
+/* .splatter_img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 36.21px;
+  top: 0;
+  opacity: 15%;
+} */
+
+/* .ass_mugs_img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 0;
+  top: 0;
+  opacity: 15%;
+}
+
+.gray_flyer_img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 0;
+  top: 900px;
+  opacity: 15%;
+}
+
+.emb_machine_img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 70px;
+  top: 700px;
+  opacity: 15%;
+}
+
+.emb_machine2_img {
+  position: absolute;
+  transform: rotate(15deg);
+  width: 400px;
+  height: 400px;
+  right: 200px;
+  top: 1100px;
+  opacity: 15%;
+}
+
+.col_threads_img {
+  display: none;
+}
+
+.ass_mugs2_img {
+  display: none;
+} */
+
+/* TOP ITEMS */
+/* .top_items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: left;
+} */
+
+/* .top_items .top_item {
+  width: 22%;
+} */
+
+/* BOTTOM ITEM */
+/* .bottom_items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+  margin: 50px auto 80px auto;
+  text-align: left;
+} */
+
+/* MEDIA QUERIES FOR WHAT WE DO SECTION */
+
+/* .wwd_section {
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 100vw;
+   height: fit-content;
+   position: relative;
+   text-align: center;
+   padding: 40px 0;
+ }
+
+ .wwd_section h2 {
+   background: linear-gradient(to right, #963204 55%, transparent 40%);
+   margin: 0 0 60px;
+   font-size: 22px;
+   font-family: 'Georama',
+     sans-serif;
+   font-weight: 400;
+   margin: 0 0 60px;
+   padding: 5px 0;
+   width: 40%;
+ }
+
+ .wwd_section .item,
+ .inverse_item {
+   background-color: rgba(196, 196, 196, 0.2);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border: 1px solid rgba(196, 196, 196, 0.3);
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   z-index: 100;
+ }
+
+ .wwd_section .item_content,
+ .inverse_item .item_content {
+   width: 100%;
+   padding: 20px 15px;
+ }
+
+ .wwd_section .item_img {
+   width: 100%;
+   height: 300px;
+ }
+
+ .wwd_section .title {
+   color: white;
+   display: inline-block;
+   margin-bottom: 15px;
+   font-size: 1.25rem;
+   font-family: "Habibi", serif;
+   font-weight: 600;
+   border-bottom: 3px solid #d45920;
+   border-radius: 2px;
+   padding: 20px 0px 5px 5px;
+ }
+
+ .wwd_section .description {
+   color: white;
+   max-width: 256px;
+   font-size: 13px;
+   font-family: "Habibi", serif;
+   line-height: 20px;
+   padding-left: 5px;
+ }
+
+ .splatter_img {
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   left: 0px;
+   top: 100px;
+   opacity: 15%;
+ }
+
+ .ass_mugs_img {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   right: -50px;
+   top: 0;
+   opacity: 15%;
+ }
+
+ .gray_flyer_img {
+   position: absolute;
+   width: 200px;
+   height: 200px;     
+   left: 0px;
+   top: 500px;
+   opacity: 15%;
+ }
+
+ .emb_machine_img {
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   left: 0px;
+   top: 600px;
+   opacity: 15%;
+ }
+
+ .emb_machine2_img {
+   position: absolute;
+   transform: rotate(36 0deg);
+   width: 300px;
+   height: 300px;
+   left: 80px;
+   top: 1350px;
+   opacity: 15%;
+ }
+
+ .col_threads_img {
+   position: absolute; 
+   width: 100%;
+   height: 330px;
+   left: 0;
+   top: 2000px;
+   opacity: 15%;
+ }
+
+ .ass_mugs2_img {
+   position: absolute;
+   width: 100%;
+   height: 330px;
+   left: 0;
+   top: 2670px;
+   opacity: 15%;
+ }
+
+ .item {
+   height: fit-content;
+ }
+
+ .top_items,
+ .bottom_items {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 80vw;
+   margin: 0 auto;
+   text-align: left;
+ }
+
+ .top_items .top_item {
+   width: 100%;
+   margin-bottom: 40px;
+ }
+
+ .bottom_items .bottom_item {
+   width: 100%;
+   margin-bottom: 40px;
+ } */
